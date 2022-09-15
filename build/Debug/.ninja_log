@@ -1,0 +1,6 @@
+# ninja log v5
+1	812	1663268017161566870	CMakeFiles/RTOW_learning.dir/main.cpp.o	6a6939ead12bb6a7
+8	995	1663269446169706003	CMakeFiles/ppm_image.dir/ppm_image.cpp.o	7089a465efd098d
+995	1108	1663269446288655385	ppm_image	f245234607b2f94
+7	857	1663275866981795969	CMakeFiles/ppm_image.dir/ppm_image.cpp.o	7089a465efd098d
+857	968	1663275867096409409	ppm_image	f245234607b2f94
