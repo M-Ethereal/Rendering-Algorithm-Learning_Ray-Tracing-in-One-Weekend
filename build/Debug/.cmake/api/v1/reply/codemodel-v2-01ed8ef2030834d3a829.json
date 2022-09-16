@@ -44,7 +44,8 @@
 						26,
 						27,
 						28,
-						29
+						29,
+						30
 					]
 				}
 			],
@@ -88,7 +89,8 @@
 						26,
 						27,
 						28,
-						29
+						29,
+						30
 					]
 				}
 			],
@@ -288,6 +290,13 @@
 					"id" : "NightlyUpdate::@6890427a1f51a3e7e1df",
 					"jsonFile" : "target-NightlyUpdate-Debug-a17cc1117f12b54966ad.json",
 					"name" : "NightlyUpdate",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "antialiasing::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-antialiasing-Debug-47188105f26ce7eab7ad.json",
+					"name" : "antialiasing",
 					"projectIndex" : 0
 				},
 				{
