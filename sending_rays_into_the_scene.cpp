@@ -5,7 +5,27 @@
 #include <iostream>
 using namespace std;
 
+//Add a sphere!
+//Test whether there is an intersection
+//C(Cx,Cy,Cz) is the sphere center
+//Suppose there is a point P(x,y,z)=A+tb
+//When (P(t)-C)(P(t)-C)=r^2 has at least one root
+//the ray hit the sphere
+//Find the solution of t^2*b*b + 2tb(A-C) + (A-C)(A-C) - r^2 = 0
+bool hit_sphere(const point3& center, float radius, const ray& r){
+  vec3 P_A = r.origin() - center;
+  auto a = dot(r.direction(), r.direction());
+  auto b = 2.0 * dot(P_A, r.direction());
+  auto c = dot(P_A, P_A) - radius*radius;
+  auto discriminant = b*b - 4*a*c;
+  return (discriminant > 0);
+}
+
 color ray_color(const ray& r) {
+  //Place a sphere at(0,0,-1) and test it!
+  if (hit_sphere(point3(0,0,-1), 0.5, r)) {
+    return color(0.7, 0.2, 0.4);
+  }
   //t from 0 to 1 == height from bottom to top == color from white to blue
   vec3 unit_direction = unit_vector(r.direction()); //normalizing the vector
   auto t = 0.5 * (unit_direction.y() + 1.0); //-1 < y < 1, make 0 < t < 1
