@@ -12,23 +12,51 @@ using namespace std;
 //When (P(t)-C)(P(t)-C)=r^2 has at least one root
 //the ray hit the sphere
 //Find the solution of t^2*b*b + 2tb(A-C) + (A-C)(A-C) - r^2 = 0
-bool hit_sphere(const point3& center, float radius, const ray& r){
-  vec3 P_A = r.origin() - center;
-  auto a = dot(r.direction(), r.direction());
-  auto b = 2.0 * dot(P_A, r.direction());
-  auto c = dot(P_A, P_A) - radius*radius;
-  auto discriminant = b*b - 4*a*c;
-  return (discriminant > 0);
+// bool hit_sphere(const point3& center, float radius, const ray& r){
+//   vec3 P_A = r.origin() - center;
+//   auto a = dot(r.direction(), r.direction());
+//   auto b = 2.0 * dot(P_A, r.direction());
+//   auto c = dot(P_A, P_A) - radius*radius;
+//   auto discriminant = b*b - 4*a*c;
+//   return (discriminant > 0);
+// }
+
+//we will have t to be calculated now
+float hit_sphere(const point3& center, float radius, const ray& r){
+  vec3 oc = r.origin() - center;
+  // auto a = dot(r.direction(), r.direction());
+  // auto b = 2.0 * dot(P_A, r.direction());
+  // auto c = dot(P_A, P_A) - radius*radius;
+  // auto discriminant = b*b - 4*a*c;
+  //optimize! make b = 2h
+  //t would be (-h +- sqrt(h^2 - ac)) / a
+  auto a = r.direction().length_squared();
+  auto half_b = dot(oc, r.direction());
+  auto c = oc.length_squared() - radius*radius;
+  auto discriminant = half_b*half_b - a*c;
+
+  if (discriminant < 0){
+    return -1.0;
+  } else {
+    return (-half_b - sqrt(discriminant)) / a;
+  }
 }
 
 color ray_color(const ray& r) {
   //Place a sphere at(0,0,-1) and test it!
-  if (hit_sphere(point3(0,0,-1), 0.5, r)) {
-    return color(0.7, 0.2, 0.4);
+  // if (hit_sphere(point3(0,0,-1), 0.5, r)) {
+  //   return color(0.7, 0.2, 0.4);
+  // }
+  auto t = hit_sphere(point3(0,0,-1), 0.5, r);
+  if (t > 0.0) { //we don't care about things behind our camera
+    vec3 N = unit_vector(r.at(t) - vec3(0,0,-1));//N is the normalized surface normal (P-C)
+    return 0.5*color(N.x()+1, N.y()+1, N.z()+1);//give the colar according to the normal
   }
+
+  //creat a blue scene
   //t from 0 to 1 == height from bottom to top == color from white to blue
   vec3 unit_direction = unit_vector(r.direction()); //normalizing the vector
-  auto t = 0.5 * (unit_direction.y() + 1.0); //-1 < y < 1, make 0 < t < 1
+  t = 0.5 * (unit_direction.y() + 1.0); //-1 < y < 1, make 0 < t < 1
   return (1.0-t)*color(1.0, 1.0, 1.0) + t*color(0.5, 0.7, 1.0); //lerp: blendedValue = (1-t)*startValue + t*endValue
 }
 
