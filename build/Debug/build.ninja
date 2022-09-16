@@ -236,6 +236,37 @@ build ppm_image: CXX_EXECUTABLE_LINKER__ppm_image_Debug CMakeFiles/ppm_image.dir
   TARGET_FILE = ppm_image
   TARGET_PDB = ppm_image.dbg
 
+# =============================================================================
+# Object build statements for EXECUTABLE target sending_rays_into_the_scene
+
+
+#############################################
+# Order-only phony target for sending_rays_into_the_scene
+
+build cmake_object_order_depends_target_sending_rays_into_the_scene: phony || CMakeFiles/sending_rays_into_the_scene.dir
+
+build CMakeFiles/sending_rays_into_the_scene.dir/sending_rays_into_the_scene.cpp.o: CXX_COMPILER__sending_rays_into_the_scene_Debug /Users/loaneruser/Documents/Dartmouth/Rendering$ Algorithm/Code/Reading$ Assignments/RTOW/Rendering-Algorithm-Learning_Ray-Tracing-in-One-Weekend/sending_rays_into_the_scene.cpp || cmake_object_order_depends_target_sending_rays_into_the_scene
+  DEP_FILE = CMakeFiles/sending_rays_into_the_scene.dir/sending_rays_into_the_scene.cpp.o.d
+  FLAGS = -g -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -mmacosx-version-min=12.1
+  OBJECT_DIR = CMakeFiles/sending_rays_into_the_scene.dir
+  OBJECT_FILE_DIR = CMakeFiles/sending_rays_into_the_scene.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target sending_rays_into_the_scene
+
+
+#############################################
+# Link the executable sending_rays_into_the_scene
+
+build sending_rays_into_the_scene: CXX_EXECUTABLE_LINKER__sending_rays_into_the_scene_Debug CMakeFiles/sending_rays_into_the_scene.dir/sending_rays_into_the_scene.cpp.o
+  FLAGS = -g -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -mmacosx-version-min=12.1
+  OBJECT_DIR = CMakeFiles/sending_rays_into_the_scene.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = sending_rays_into_the_scene
+  TARGET_PDB = sending_rays_into_the_scene.dbg
+
 
 #############################################
 # Utility command for package
@@ -531,7 +562,7 @@ build CMakeFiles/ContinuousSubmit | ${cmake_ninja_workdir}CMakeFiles/ContinuousS
 #############################################
 # Folder: /Users/loaneruser/Documents/Dartmouth/Rendering Algorithm/Code/Reading Assignments/RTOW/Rendering-Algorithm-Learning_Ray-Tracing-in-One-Weekend/build/Debug
 
-build all: phony ppm_image
+build all: phony ppm_image sending_rays_into_the_scene
 
 # =============================================================================
 # Unknown Build Time Dependencies.

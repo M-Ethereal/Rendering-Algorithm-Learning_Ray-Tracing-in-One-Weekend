@@ -43,7 +43,8 @@
 						25,
 						26,
 						27,
-						28
+						28,
+						29
 					]
 				}
 			],
@@ -86,7 +87,8 @@
 						25,
 						26,
 						27,
-						28
+						28,
+						29
 					]
 				}
 			],
@@ -293,6 +295,13 @@
 					"id" : "ppm_image::@6890427a1f51a3e7e1df",
 					"jsonFile" : "target-ppm_image-Debug-33e4c2b60da8429ec0a6.json",
 					"name" : "ppm_image",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "sending_rays_into_the_scene::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-sending_rays_into_the_scene-Debug-d6c09116f916428ad623.json",
+					"name" : "sending_rays_into_the_scene",
 					"projectIndex" : 0
 				}
 			]
