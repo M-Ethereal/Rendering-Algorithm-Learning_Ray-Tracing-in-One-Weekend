@@ -48,7 +48,9 @@
 						30,
 						31,
 						32,
-						33
+						33,
+						34,
+						35
 					]
 				}
 			],
@@ -96,7 +98,9 @@
 						30,
 						31,
 						32,
-						33
+						33,
+						34,
+						35
 					]
 				}
 			],
@@ -314,6 +318,13 @@
 				},
 				{
 					"directoryIndex" : 0,
+					"id" : "final_render::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-final_render-Debug-7f7f33273c94976c6e33.json",
+					"name" : "final_render",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
 					"id" : "glass::@6890427a1f51a3e7e1df",
 					"jsonFile" : "target-glass-Debug-613d4180a7dc6b2af457.json",
 					"name" : "glass",
@@ -324,6 +335,13 @@
 					"id" : "metal::@6890427a1f51a3e7e1df",
 					"jsonFile" : "target-metal-Debug-eb3d28c03b88802079e6.json",
 					"name" : "metal",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "positionable_camera::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-positionable_camera-Debug-cabb91ed6bc29a972f1d.json",
+					"name" : "positionable_camera",
 					"projectIndex" : 0
 				},
 				{

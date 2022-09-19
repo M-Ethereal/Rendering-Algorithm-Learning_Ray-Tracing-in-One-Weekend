@@ -10,6 +10,8 @@ add_executable(antialiasing antialiasing.cpp)
 add_executable(Diffuse_Materials Diffuse_Materials.cpp)
 add_executable(metal metal.cpp)
 add_executable(glass glass.cpp)
+add_executable(positionable_camera positionable_camera.cpp)
+add_executable(final_render final_render.cpp)
 
 set(CPACK_PROJECT_NAME ${PROJECT_NAME})
 set(CPACK_PROJECT_VERSION ${PROJECT_VERSION})

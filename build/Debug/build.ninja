@@ -391,6 +391,68 @@ build glass: CXX_EXECUTABLE_LINKER__glass_Debug CMakeFiles/glass.dir/glass.cpp.o
   TARGET_FILE = glass
   TARGET_PDB = glass.dbg
 
+# =============================================================================
+# Object build statements for EXECUTABLE target positionable_camera
+
+
+#############################################
+# Order-only phony target for positionable_camera
+
+build cmake_object_order_depends_target_positionable_camera: phony || CMakeFiles/positionable_camera.dir
+
+build CMakeFiles/positionable_camera.dir/positionable_camera.cpp.o: CXX_COMPILER__positionable_camera_Debug /Users/loaneruser/Documents/Dartmouth/Rendering$ Algorithm/Code/Reading$ Assignments/RTOW/Rendering-Algorithm-Learning_Ray-Tracing-in-One-Weekend/positionable_camera.cpp || cmake_object_order_depends_target_positionable_camera
+  DEP_FILE = CMakeFiles/positionable_camera.dir/positionable_camera.cpp.o.d
+  FLAGS = -g -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -mmacosx-version-min=12.1
+  OBJECT_DIR = CMakeFiles/positionable_camera.dir
+  OBJECT_FILE_DIR = CMakeFiles/positionable_camera.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target positionable_camera
+
+
+#############################################
+# Link the executable positionable_camera
+
+build positionable_camera: CXX_EXECUTABLE_LINKER__positionable_camera_Debug CMakeFiles/positionable_camera.dir/positionable_camera.cpp.o
+  FLAGS = -g -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -mmacosx-version-min=12.1
+  OBJECT_DIR = CMakeFiles/positionable_camera.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = positionable_camera
+  TARGET_PDB = positionable_camera.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target final_render
+
+
+#############################################
+# Order-only phony target for final_render
+
+build cmake_object_order_depends_target_final_render: phony || CMakeFiles/final_render.dir
+
+build CMakeFiles/final_render.dir/final_render.cpp.o: CXX_COMPILER__final_render_Debug /Users/loaneruser/Documents/Dartmouth/Rendering$ Algorithm/Code/Reading$ Assignments/RTOW/Rendering-Algorithm-Learning_Ray-Tracing-in-One-Weekend/final_render.cpp || cmake_object_order_depends_target_final_render
+  DEP_FILE = CMakeFiles/final_render.dir/final_render.cpp.o.d
+  FLAGS = -g -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -mmacosx-version-min=12.1
+  OBJECT_DIR = CMakeFiles/final_render.dir
+  OBJECT_FILE_DIR = CMakeFiles/final_render.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target final_render
+
+
+#############################################
+# Link the executable final_render
+
+build final_render: CXX_EXECUTABLE_LINKER__final_render_Debug CMakeFiles/final_render.dir/final_render.cpp.o
+  FLAGS = -g -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -mmacosx-version-min=12.1
+  OBJECT_DIR = CMakeFiles/final_render.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = final_render
+  TARGET_PDB = final_render.dbg
+
 
 #############################################
 # Utility command for package
@@ -686,7 +748,7 @@ build CMakeFiles/ContinuousSubmit | ${cmake_ninja_workdir}CMakeFiles/ContinuousS
 #############################################
 # Folder: /Users/loaneruser/Documents/Dartmouth/Rendering Algorithm/Code/Reading Assignments/RTOW/Rendering-Algorithm-Learning_Ray-Tracing-in-One-Weekend/build/Debug
 
-build all: phony ppm_image sending_rays_into_the_scene antialiasing Diffuse_Materials metal glass
+build all: phony ppm_image sending_rays_into_the_scene antialiasing Diffuse_Materials metal glass positionable_camera final_render
 
 # =============================================================================
 # Unknown Build Time Dependencies.
