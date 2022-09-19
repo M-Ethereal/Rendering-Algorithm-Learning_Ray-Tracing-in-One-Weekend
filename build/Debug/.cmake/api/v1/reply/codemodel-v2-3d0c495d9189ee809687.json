@@ -45,7 +45,8 @@
 						27,
 						28,
 						29,
-						30
+						30,
+						31
 					]
 				}
 			],
@@ -90,7 +91,8 @@
 						27,
 						28,
 						29,
-						30
+						30,
+						31
 					]
 				}
 			],
@@ -157,6 +159,13 @@
 					"id" : "ContinuousUpdate::@6890427a1f51a3e7e1df",
 					"jsonFile" : "target-ContinuousUpdate-Debug-ba35fd5fd696757d8ac1.json",
 					"name" : "ContinuousUpdate",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "Diffuse_Materials::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Diffuse_Materials-Debug-2a4fd70a3ec6a72df5fa.json",
+					"name" : "Diffuse_Materials",
 					"projectIndex" : 0
 				},
 				{

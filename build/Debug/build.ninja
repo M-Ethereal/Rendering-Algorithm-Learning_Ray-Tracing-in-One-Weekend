@@ -298,6 +298,37 @@ build antialiasing: CXX_EXECUTABLE_LINKER__antialiasing_Debug CMakeFiles/antiali
   TARGET_FILE = antialiasing
   TARGET_PDB = antialiasing.dbg
 
+# =============================================================================
+# Object build statements for EXECUTABLE target Diffuse_Materials
+
+
+#############################################
+# Order-only phony target for Diffuse_Materials
+
+build cmake_object_order_depends_target_Diffuse_Materials: phony || CMakeFiles/Diffuse_Materials.dir
+
+build CMakeFiles/Diffuse_Materials.dir/Diffuse_Materials.cpp.o: CXX_COMPILER__Diffuse_Materials_Debug /Users/loaneruser/Documents/Dartmouth/Rendering$ Algorithm/Code/Reading$ Assignments/RTOW/Rendering-Algorithm-Learning_Ray-Tracing-in-One-Weekend/Diffuse_Materials.cpp || cmake_object_order_depends_target_Diffuse_Materials
+  DEP_FILE = CMakeFiles/Diffuse_Materials.dir/Diffuse_Materials.cpp.o.d
+  FLAGS = -g -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -mmacosx-version-min=12.1
+  OBJECT_DIR = CMakeFiles/Diffuse_Materials.dir
+  OBJECT_FILE_DIR = CMakeFiles/Diffuse_Materials.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target Diffuse_Materials
+
+
+#############################################
+# Link the executable Diffuse_Materials
+
+build Diffuse_Materials: CXX_EXECUTABLE_LINKER__Diffuse_Materials_Debug CMakeFiles/Diffuse_Materials.dir/Diffuse_Materials.cpp.o
+  FLAGS = -g -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -mmacosx-version-min=12.1
+  OBJECT_DIR = CMakeFiles/Diffuse_Materials.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = Diffuse_Materials
+  TARGET_PDB = Diffuse_Materials.dbg
+
 
 #############################################
 # Utility command for package
@@ -593,7 +624,7 @@ build CMakeFiles/ContinuousSubmit | ${cmake_ninja_workdir}CMakeFiles/ContinuousS
 #############################################
 # Folder: /Users/loaneruser/Documents/Dartmouth/Rendering Algorithm/Code/Reading Assignments/RTOW/Rendering-Algorithm-Learning_Ray-Tracing-in-One-Weekend/build/Debug
 
-build all: phony ppm_image sending_rays_into_the_scene antialiasing
+build all: phony ppm_image sending_rays_into_the_scene antialiasing Diffuse_Materials
 
 # =============================================================================
 # Unknown Build Time Dependencies.

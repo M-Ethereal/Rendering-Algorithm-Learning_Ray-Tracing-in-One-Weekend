@@ -7,6 +7,7 @@ enable_testing()
 add_executable(ppm_image ppm_image.cpp)
 add_executable(sending_rays_into_the_scene sending_rays_into_the_scene.cpp)
 add_executable(antialiasing antialiasing.cpp)
+add_executable(Diffuse_Materials Diffuse_Materials.cpp)
 
 set(CPACK_PROJECT_NAME ${PROJECT_NAME})
 set(CPACK_PROJECT_VERSION ${PROJECT_VERSION})
