@@ -360,6 +360,37 @@ build metal: CXX_EXECUTABLE_LINKER__metal_Debug CMakeFiles/metal.dir/metal.cpp.o
   TARGET_FILE = metal
   TARGET_PDB = metal.dbg
 
+# =============================================================================
+# Object build statements for EXECUTABLE target glass
+
+
+#############################################
+# Order-only phony target for glass
+
+build cmake_object_order_depends_target_glass: phony || CMakeFiles/glass.dir
+
+build CMakeFiles/glass.dir/glass.cpp.o: CXX_COMPILER__glass_Debug /Users/loaneruser/Documents/Dartmouth/Rendering$ Algorithm/Code/Reading$ Assignments/RTOW/Rendering-Algorithm-Learning_Ray-Tracing-in-One-Weekend/glass.cpp || cmake_object_order_depends_target_glass
+  DEP_FILE = CMakeFiles/glass.dir/glass.cpp.o.d
+  FLAGS = -g -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -mmacosx-version-min=12.1
+  OBJECT_DIR = CMakeFiles/glass.dir
+  OBJECT_FILE_DIR = CMakeFiles/glass.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target glass
+
+
+#############################################
+# Link the executable glass
+
+build glass: CXX_EXECUTABLE_LINKER__glass_Debug CMakeFiles/glass.dir/glass.cpp.o
+  FLAGS = -g -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -mmacosx-version-min=12.1
+  OBJECT_DIR = CMakeFiles/glass.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = glass
+  TARGET_PDB = glass.dbg
+
 
 #############################################
 # Utility command for package
@@ -655,7 +686,7 @@ build CMakeFiles/ContinuousSubmit | ${cmake_ninja_workdir}CMakeFiles/ContinuousS
 #############################################
 # Folder: /Users/loaneruser/Documents/Dartmouth/Rendering Algorithm/Code/Reading Assignments/RTOW/Rendering-Algorithm-Learning_Ray-Tracing-in-One-Weekend/build/Debug
 
-build all: phony ppm_image sending_rays_into_the_scene antialiasing Diffuse_Materials metal
+build all: phony ppm_image sending_rays_into_the_scene antialiasing Diffuse_Materials metal glass
 
 # =============================================================================
 # Unknown Build Time Dependencies.
