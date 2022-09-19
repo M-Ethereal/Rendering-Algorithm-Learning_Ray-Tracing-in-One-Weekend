@@ -46,7 +46,8 @@
 						28,
 						29,
 						30,
-						31
+						31,
+						32
 					]
 				}
 			],
@@ -92,7 +93,8 @@
 						28,
 						29,
 						30,
-						31
+						31,
+						32
 					]
 				}
 			],
@@ -306,6 +308,13 @@
 					"id" : "antialiasing::@6890427a1f51a3e7e1df",
 					"jsonFile" : "target-antialiasing-Debug-47188105f26ce7eab7ad.json",
 					"name" : "antialiasing",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "metal::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-metal-Debug-eb3d28c03b88802079e6.json",
+					"name" : "metal",
 					"projectIndex" : 0
 				},
 				{

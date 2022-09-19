@@ -329,6 +329,37 @@ build Diffuse_Materials: CXX_EXECUTABLE_LINKER__Diffuse_Materials_Debug CMakeFil
   TARGET_FILE = Diffuse_Materials
   TARGET_PDB = Diffuse_Materials.dbg
 
+# =============================================================================
+# Object build statements for EXECUTABLE target metal
+
+
+#############################################
+# Order-only phony target for metal
+
+build cmake_object_order_depends_target_metal: phony || CMakeFiles/metal.dir
+
+build CMakeFiles/metal.dir/metal.cpp.o: CXX_COMPILER__metal_Debug /Users/loaneruser/Documents/Dartmouth/Rendering$ Algorithm/Code/Reading$ Assignments/RTOW/Rendering-Algorithm-Learning_Ray-Tracing-in-One-Weekend/metal.cpp || cmake_object_order_depends_target_metal
+  DEP_FILE = CMakeFiles/metal.dir/metal.cpp.o.d
+  FLAGS = -g -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -mmacosx-version-min=12.1
+  OBJECT_DIR = CMakeFiles/metal.dir
+  OBJECT_FILE_DIR = CMakeFiles/metal.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target metal
+
+
+#############################################
+# Link the executable metal
+
+build metal: CXX_EXECUTABLE_LINKER__metal_Debug CMakeFiles/metal.dir/metal.cpp.o
+  FLAGS = -g -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -mmacosx-version-min=12.1
+  OBJECT_DIR = CMakeFiles/metal.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = metal
+  TARGET_PDB = metal.dbg
+
 
 #############################################
 # Utility command for package
@@ -624,7 +655,7 @@ build CMakeFiles/ContinuousSubmit | ${cmake_ninja_workdir}CMakeFiles/ContinuousS
 #############################################
 # Folder: /Users/loaneruser/Documents/Dartmouth/Rendering Algorithm/Code/Reading Assignments/RTOW/Rendering-Algorithm-Learning_Ray-Tracing-in-One-Weekend/build/Debug
 
-build all: phony ppm_image sending_rays_into_the_scene antialiasing Diffuse_Materials
+build all: phony ppm_image sending_rays_into_the_scene antialiasing Diffuse_Materials metal
 
 # =============================================================================
 # Unknown Build Time Dependencies.

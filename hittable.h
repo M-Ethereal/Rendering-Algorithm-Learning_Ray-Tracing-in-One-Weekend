@@ -2,10 +2,14 @@
 #define HITTABLE_H
 
 #include "ray.h"
+#include "common_utilities.h"
+
+class material;
 
 struct hit_record {
   point3 p;
   vec3 normal;
+  shared_ptr<material> mat_ptr;
   double t;
   //add a new contribute to record where the normal towards
   bool front_face;
