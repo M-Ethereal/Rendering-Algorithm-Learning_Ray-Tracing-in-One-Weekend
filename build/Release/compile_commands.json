@@ -1,0 +1,42 @@
+[
+{
+  "directory": "/Users/loaneruser/Documents/Dartmouth/Rendering Algorithm/Code/Reading Assignments/RTOW/Rendering-Algorithm-Learning_Ray-Tracing-in-One-Weekend/build/Release",
+  "command": "/usr/bin/clang++ -O3 -DNDEBUG -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -o CMakeFiles/ppm_image.dir/ppm_image.cpp.o -c \"/Users/loaneruser/Documents/Dartmouth/Rendering Algorithm/Code/Reading Assignments/RTOW/Rendering-Algorithm-Learning_Ray-Tracing-in-One-Weekend/ppm_image.cpp\"",
+  "file": "/Users/loaneruser/Documents/Dartmouth/Rendering Algorithm/Code/Reading Assignments/RTOW/Rendering-Algorithm-Learning_Ray-Tracing-in-One-Weekend/ppm_image.cpp"
+},
+{
+  "directory": "/Users/loaneruser/Documents/Dartmouth/Rendering Algorithm/Code/Reading Assignments/RTOW/Rendering-Algorithm-Learning_Ray-Tracing-in-One-Weekend/build/Release",
+  "command": "/usr/bin/clang++ -O3 -DNDEBUG -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -o CMakeFiles/sending_rays_into_the_scene.dir/sending_rays_into_the_scene.cpp.o -c \"/Users/loaneruser/Documents/Dartmouth/Rendering Algorithm/Code/Reading Assignments/RTOW/Rendering-Algorithm-Learning_Ray-Tracing-in-One-Weekend/sending_rays_into_the_scene.cpp\"",
+  "file": "/Users/loaneruser/Documents/Dartmouth/Rendering Algorithm/Code/Reading Assignments/RTOW/Rendering-Algorithm-Learning_Ray-Tracing-in-One-Weekend/sending_rays_into_the_scene.cpp"
+},
+{
+  "directory": "/Users/loaneruser/Documents/Dartmouth/Rendering Algorithm/Code/Reading Assignments/RTOW/Rendering-Algorithm-Learning_Ray-Tracing-in-One-Weekend/build/Release",
+  "command": "/usr/bin/clang++ -O3 -DNDEBUG -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -o CMakeFiles/antialiasing.dir/antialiasing.cpp.o -c \"/Users/loaneruser/Documents/Dartmouth/Rendering Algorithm/Code/Reading Assignments/RTOW/Rendering-Algorithm-Learning_Ray-Tracing-in-One-Weekend/antialiasing.cpp\"",
+  "file": "/Users/loaneruser/Documents/Dartmouth/Rendering Algorithm/Code/Reading Assignments/RTOW/Rendering-Algorithm-Learning_Ray-Tracing-in-One-Weekend/antialiasing.cpp"
+},
+{
+  "directory": "/Users/loaneruser/Documents/Dartmouth/Rendering Algorithm/Code/Reading Assignments/RTOW/Rendering-Algorithm-Learning_Ray-Tracing-in-One-Weekend/build/Release",
+  "command": "/usr/bin/clang++ -O3 -DNDEBUG -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -o CMakeFiles/Diffuse_Materials.dir/Diffuse_Materials.cpp.o -c \"/Users/loaneruser/Documents/Dartmouth/Rendering Algorithm/Code/Reading Assignments/RTOW/Rendering-Algorithm-Learning_Ray-Tracing-in-One-Weekend/Diffuse_Materials.cpp\"",
+  "file": "/Users/loaneruser/Documents/Dartmouth/Rendering Algorithm/Code/Reading Assignments/RTOW/Rendering-Algorithm-Learning_Ray-Tracing-in-One-Weekend/Diffuse_Materials.cpp"
+},
+{
+  "directory": "/Users/loaneruser/Documents/Dartmouth/Rendering Algorithm/Code/Reading Assignments/RTOW/Rendering-Algorithm-Learning_Ray-Tracing-in-One-Weekend/build/Release",
+  "command": "/usr/bin/clang++ -O3 -DNDEBUG -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -o CMakeFiles/metal.dir/metal.cpp.o -c \"/Users/loaneruser/Documents/Dartmouth/Rendering Algorithm/Code/Reading Assignments/RTOW/Rendering-Algorithm-Learning_Ray-Tracing-in-One-Weekend/metal.cpp\"",
+  "file": "/Users/loaneruser/Documents/Dartmouth/Rendering Algorithm/Code/Reading Assignments/RTOW/Rendering-Algorithm-Learning_Ray-Tracing-in-One-Weekend/metal.cpp"
+},
+{
+  "directory": "/Users/loaneruser/Documents/Dartmouth/Rendering Algorithm/Code/Reading Assignments/RTOW/Rendering-Algorithm-Learning_Ray-Tracing-in-One-Weekend/build/Release",
+  "command": "/usr/bin/clang++ -O3 -DNDEBUG -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -o CMakeFiles/glass.dir/glass.cpp.o -c \"/Users/loaneruser/Documents/Dartmouth/Rendering Algorithm/Code/Reading Assignments/RTOW/Rendering-Algorithm-Learning_Ray-Tracing-in-One-Weekend/glass.cpp\"",
+  "file": "/Users/loaneruser/Documents/Dartmouth/Rendering Algorithm/Code/Reading Assignments/RTOW/Rendering-Algorithm-Learning_Ray-Tracing-in-One-Weekend/glass.cpp"
+},
+{
+  "directory": "/Users/loaneruser/Documents/Dartmouth/Rendering Algorithm/Code/Reading Assignments/RTOW/Rendering-Algorithm-Learning_Ray-Tracing-in-One-Weekend/build/Release",
+  "command": "/usr/bin/clang++ -O3 -DNDEBUG -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -o CMakeFiles/positionable_camera.dir/positionable_camera.cpp.o -c \"/Users/loaneruser/Documents/Dartmouth/Rendering Algorithm/Code/Reading Assignments/RTOW/Rendering-Algorithm-Learning_Ray-Tracing-in-One-Weekend/positionable_camera.cpp\"",
+  "file": "/Users/loaneruser/Documents/Dartmouth/Rendering Algorithm/Code/Reading Assignments/RTOW/Rendering-Algorithm-Learning_Ray-Tracing-in-One-Weekend/positionable_camera.cpp"
+},
+{
+  "directory": "/Users/loaneruser/Documents/Dartmouth/Rendering Algorithm/Code/Reading Assignments/RTOW/Rendering-Algorithm-Learning_Ray-Tracing-in-One-Weekend/build/Release",
+  "command": "/usr/bin/clang++ -O3 -DNDEBUG -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -o CMakeFiles/final_render.dir/final_render.cpp.o -c \"/Users/loaneruser/Documents/Dartmouth/Rendering Algorithm/Code/Reading Assignments/RTOW/Rendering-Algorithm-Learning_Ray-Tracing-in-One-Weekend/final_render.cpp\"",
+  "file": "/Users/loaneruser/Documents/Dartmouth/Rendering Algorithm/Code/Reading Assignments/RTOW/Rendering-Algorithm-Learning_Ray-Tracing-in-One-Weekend/final_render.cpp"
+}
+]

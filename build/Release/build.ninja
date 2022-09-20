@@ -1,0 +1,814 @@
+## This file contains all the build statements describing the
+# compilation DAG.
+
+# =============================================================================
+# Write statements declared in CMakeLists.txt:
+# 
+# Which is the root file.
+# =============================================================================
+
+# =============================================================================
+# Project: RTOW_learning
+# Configurations: Release
+# =============================================================================
+
+#############################################
+# Minimal version of Ninja required by this file
+
+ninja_required_version = 1.5
+
+
+#############################################
+# Set configuration variable for custom commands.
+
+CONFIGURATION = Release
+# =============================================================================
+# Include auxiliary files.
+
+
+#############################################
+# Include rules file.
+
+include CMakeFiles/rules.ninja
+
+# =============================================================================
+
+#############################################
+# Logical path to working directory; prefix for absolute paths.
+
+cmake_ninja_workdir = /Users/loaneruser/Documents/Dartmouth/Rendering$ Algorithm/Code/Reading$ Assignments/RTOW/Rendering-Algorithm-Learning_Ray-Tracing-in-One-Weekend/build/Release/
+
+#############################################
+# Utility command for Experimental
+
+build Experimental: phony CMakeFiles/Experimental
+
+
+#############################################
+# Utility command for Nightly
+
+build Nightly: phony CMakeFiles/Nightly
+
+
+#############################################
+# Utility command for Continuous
+
+build Continuous: phony CMakeFiles/Continuous
+
+
+#############################################
+# Utility command for NightlyMemoryCheck
+
+build NightlyMemoryCheck: phony CMakeFiles/NightlyMemoryCheck
+
+
+#############################################
+# Utility command for NightlyStart
+
+build NightlyStart: phony CMakeFiles/NightlyStart
+
+
+#############################################
+# Utility command for NightlyUpdate
+
+build NightlyUpdate: phony CMakeFiles/NightlyUpdate
+
+
+#############################################
+# Utility command for NightlyConfigure
+
+build NightlyConfigure: phony CMakeFiles/NightlyConfigure
+
+
+#############################################
+# Utility command for NightlyBuild
+
+build NightlyBuild: phony CMakeFiles/NightlyBuild
+
+
+#############################################
+# Utility command for NightlyTest
+
+build NightlyTest: phony CMakeFiles/NightlyTest
+
+
+#############################################
+# Utility command for NightlyCoverage
+
+build NightlyCoverage: phony CMakeFiles/NightlyCoverage
+
+
+#############################################
+# Utility command for NightlyMemCheck
+
+build NightlyMemCheck: phony CMakeFiles/NightlyMemCheck
+
+
+#############################################
+# Utility command for NightlySubmit
+
+build NightlySubmit: phony CMakeFiles/NightlySubmit
+
+
+#############################################
+# Utility command for ExperimentalStart
+
+build ExperimentalStart: phony CMakeFiles/ExperimentalStart
+
+
+#############################################
+# Utility command for ExperimentalUpdate
+
+build ExperimentalUpdate: phony CMakeFiles/ExperimentalUpdate
+
+
+#############################################
+# Utility command for ExperimentalConfigure
+
+build ExperimentalConfigure: phony CMakeFiles/ExperimentalConfigure
+
+
+#############################################
+# Utility command for ExperimentalBuild
+
+build ExperimentalBuild: phony CMakeFiles/ExperimentalBuild
+
+
+#############################################
+# Utility command for ExperimentalTest
+
+build ExperimentalTest: phony CMakeFiles/ExperimentalTest
+
+
+#############################################
+# Utility command for ExperimentalCoverage
+
+build ExperimentalCoverage: phony CMakeFiles/ExperimentalCoverage
+
+
+#############################################
+# Utility command for ExperimentalMemCheck
+
+build ExperimentalMemCheck: phony CMakeFiles/ExperimentalMemCheck
+
+
+#############################################
+# Utility command for ExperimentalSubmit
+
+build ExperimentalSubmit: phony CMakeFiles/ExperimentalSubmit
+
+
+#############################################
+# Utility command for ContinuousStart
+
+build ContinuousStart: phony CMakeFiles/ContinuousStart
+
+
+#############################################
+# Utility command for ContinuousUpdate
+
+build ContinuousUpdate: phony CMakeFiles/ContinuousUpdate
+
+
+#############################################
+# Utility command for ContinuousConfigure
+
+build ContinuousConfigure: phony CMakeFiles/ContinuousConfigure
+
+
+#############################################
+# Utility command for ContinuousBuild
+
+build ContinuousBuild: phony CMakeFiles/ContinuousBuild
+
+
+#############################################
+# Utility command for ContinuousTest
+
+build ContinuousTest: phony CMakeFiles/ContinuousTest
+
+
+#############################################
+# Utility command for ContinuousCoverage
+
+build ContinuousCoverage: phony CMakeFiles/ContinuousCoverage
+
+
+#############################################
+# Utility command for ContinuousMemCheck
+
+build ContinuousMemCheck: phony CMakeFiles/ContinuousMemCheck
+
+
+#############################################
+# Utility command for ContinuousSubmit
+
+build ContinuousSubmit: phony CMakeFiles/ContinuousSubmit
+
+# =============================================================================
+# Object build statements for EXECUTABLE target ppm_image
+
+
+#############################################
+# Order-only phony target for ppm_image
+
+build cmake_object_order_depends_target_ppm_image: phony || CMakeFiles/ppm_image.dir
+
+build CMakeFiles/ppm_image.dir/ppm_image.cpp.o: CXX_COMPILER__ppm_image_Release /Users/loaneruser/Documents/Dartmouth/Rendering$ Algorithm/Code/Reading$ Assignments/RTOW/Rendering-Algorithm-Learning_Ray-Tracing-in-One-Weekend/ppm_image.cpp || cmake_object_order_depends_target_ppm_image
+  DEP_FILE = CMakeFiles/ppm_image.dir/ppm_image.cpp.o.d
+  FLAGS = -O3 -DNDEBUG -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk
+  OBJECT_DIR = CMakeFiles/ppm_image.dir
+  OBJECT_FILE_DIR = CMakeFiles/ppm_image.dir
+  TARGET_COMPILE_PDB = CMakeFiles/ppm_image.dir/
+  TARGET_PDB = ppm_image.pdb
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target ppm_image
+
+
+#############################################
+# Link the executable ppm_image
+
+build ppm_image: CXX_EXECUTABLE_LINKER__ppm_image_Release CMakeFiles/ppm_image.dir/ppm_image.cpp.o
+  FLAGS = -O3 -DNDEBUG -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk
+  OBJECT_DIR = CMakeFiles/ppm_image.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_COMPILE_PDB = CMakeFiles/ppm_image.dir/
+  TARGET_FILE = ppm_image
+  TARGET_PDB = ppm_image.pdb
+
+# =============================================================================
+# Object build statements for EXECUTABLE target sending_rays_into_the_scene
+
+
+#############################################
+# Order-only phony target for sending_rays_into_the_scene
+
+build cmake_object_order_depends_target_sending_rays_into_the_scene: phony || CMakeFiles/sending_rays_into_the_scene.dir
+
+build CMakeFiles/sending_rays_into_the_scene.dir/sending_rays_into_the_scene.cpp.o: CXX_COMPILER__sending_rays_into_the_scene_Release /Users/loaneruser/Documents/Dartmouth/Rendering$ Algorithm/Code/Reading$ Assignments/RTOW/Rendering-Algorithm-Learning_Ray-Tracing-in-One-Weekend/sending_rays_into_the_scene.cpp || cmake_object_order_depends_target_sending_rays_into_the_scene
+  DEP_FILE = CMakeFiles/sending_rays_into_the_scene.dir/sending_rays_into_the_scene.cpp.o.d
+  FLAGS = -O3 -DNDEBUG -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk
+  OBJECT_DIR = CMakeFiles/sending_rays_into_the_scene.dir
+  OBJECT_FILE_DIR = CMakeFiles/sending_rays_into_the_scene.dir
+  TARGET_COMPILE_PDB = CMakeFiles/sending_rays_into_the_scene.dir/
+  TARGET_PDB = sending_rays_into_the_scene.pdb
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target sending_rays_into_the_scene
+
+
+#############################################
+# Link the executable sending_rays_into_the_scene
+
+build sending_rays_into_the_scene: CXX_EXECUTABLE_LINKER__sending_rays_into_the_scene_Release CMakeFiles/sending_rays_into_the_scene.dir/sending_rays_into_the_scene.cpp.o
+  FLAGS = -O3 -DNDEBUG -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk
+  OBJECT_DIR = CMakeFiles/sending_rays_into_the_scene.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_COMPILE_PDB = CMakeFiles/sending_rays_into_the_scene.dir/
+  TARGET_FILE = sending_rays_into_the_scene
+  TARGET_PDB = sending_rays_into_the_scene.pdb
+
+# =============================================================================
+# Object build statements for EXECUTABLE target antialiasing
+
+
+#############################################
+# Order-only phony target for antialiasing
+
+build cmake_object_order_depends_target_antialiasing: phony || CMakeFiles/antialiasing.dir
+
+build CMakeFiles/antialiasing.dir/antialiasing.cpp.o: CXX_COMPILER__antialiasing_Release /Users/loaneruser/Documents/Dartmouth/Rendering$ Algorithm/Code/Reading$ Assignments/RTOW/Rendering-Algorithm-Learning_Ray-Tracing-in-One-Weekend/antialiasing.cpp || cmake_object_order_depends_target_antialiasing
+  DEP_FILE = CMakeFiles/antialiasing.dir/antialiasing.cpp.o.d
+  FLAGS = -O3 -DNDEBUG -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk
+  OBJECT_DIR = CMakeFiles/antialiasing.dir
+  OBJECT_FILE_DIR = CMakeFiles/antialiasing.dir
+  TARGET_COMPILE_PDB = CMakeFiles/antialiasing.dir/
+  TARGET_PDB = antialiasing.pdb
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target antialiasing
+
+
+#############################################
+# Link the executable antialiasing
+
+build antialiasing: CXX_EXECUTABLE_LINKER__antialiasing_Release CMakeFiles/antialiasing.dir/antialiasing.cpp.o
+  FLAGS = -O3 -DNDEBUG -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk
+  OBJECT_DIR = CMakeFiles/antialiasing.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_COMPILE_PDB = CMakeFiles/antialiasing.dir/
+  TARGET_FILE = antialiasing
+  TARGET_PDB = antialiasing.pdb
+
+# =============================================================================
+# Object build statements for EXECUTABLE target Diffuse_Materials
+
+
+#############################################
+# Order-only phony target for Diffuse_Materials
+
+build cmake_object_order_depends_target_Diffuse_Materials: phony || CMakeFiles/Diffuse_Materials.dir
+
+build CMakeFiles/Diffuse_Materials.dir/Diffuse_Materials.cpp.o: CXX_COMPILER__Diffuse_Materials_Release /Users/loaneruser/Documents/Dartmouth/Rendering$ Algorithm/Code/Reading$ Assignments/RTOW/Rendering-Algorithm-Learning_Ray-Tracing-in-One-Weekend/Diffuse_Materials.cpp || cmake_object_order_depends_target_Diffuse_Materials
+  DEP_FILE = CMakeFiles/Diffuse_Materials.dir/Diffuse_Materials.cpp.o.d
+  FLAGS = -O3 -DNDEBUG -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk
+  OBJECT_DIR = CMakeFiles/Diffuse_Materials.dir
+  OBJECT_FILE_DIR = CMakeFiles/Diffuse_Materials.dir
+  TARGET_COMPILE_PDB = CMakeFiles/Diffuse_Materials.dir/
+  TARGET_PDB = Diffuse_Materials.pdb
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target Diffuse_Materials
+
+
+#############################################
+# Link the executable Diffuse_Materials
+
+build Diffuse_Materials: CXX_EXECUTABLE_LINKER__Diffuse_Materials_Release CMakeFiles/Diffuse_Materials.dir/Diffuse_Materials.cpp.o
+  FLAGS = -O3 -DNDEBUG -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk
+  OBJECT_DIR = CMakeFiles/Diffuse_Materials.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_COMPILE_PDB = CMakeFiles/Diffuse_Materials.dir/
+  TARGET_FILE = Diffuse_Materials
+  TARGET_PDB = Diffuse_Materials.pdb
+
+# =============================================================================
+# Object build statements for EXECUTABLE target metal
+
+
+#############################################
+# Order-only phony target for metal
+
+build cmake_object_order_depends_target_metal: phony || CMakeFiles/metal.dir
+
+build CMakeFiles/metal.dir/metal.cpp.o: CXX_COMPILER__metal_Release /Users/loaneruser/Documents/Dartmouth/Rendering$ Algorithm/Code/Reading$ Assignments/RTOW/Rendering-Algorithm-Learning_Ray-Tracing-in-One-Weekend/metal.cpp || cmake_object_order_depends_target_metal
+  DEP_FILE = CMakeFiles/metal.dir/metal.cpp.o.d
+  FLAGS = -O3 -DNDEBUG -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk
+  OBJECT_DIR = CMakeFiles/metal.dir
+  OBJECT_FILE_DIR = CMakeFiles/metal.dir
+  TARGET_COMPILE_PDB = CMakeFiles/metal.dir/
+  TARGET_PDB = metal.pdb
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target metal
+
+
+#############################################
+# Link the executable metal
+
+build metal: CXX_EXECUTABLE_LINKER__metal_Release CMakeFiles/metal.dir/metal.cpp.o
+  FLAGS = -O3 -DNDEBUG -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk
+  OBJECT_DIR = CMakeFiles/metal.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_COMPILE_PDB = CMakeFiles/metal.dir/
+  TARGET_FILE = metal
+  TARGET_PDB = metal.pdb
+
+# =============================================================================
+# Object build statements for EXECUTABLE target glass
+
+
+#############################################
+# Order-only phony target for glass
+
+build cmake_object_order_depends_target_glass: phony || CMakeFiles/glass.dir
+
+build CMakeFiles/glass.dir/glass.cpp.o: CXX_COMPILER__glass_Release /Users/loaneruser/Documents/Dartmouth/Rendering$ Algorithm/Code/Reading$ Assignments/RTOW/Rendering-Algorithm-Learning_Ray-Tracing-in-One-Weekend/glass.cpp || cmake_object_order_depends_target_glass
+  DEP_FILE = CMakeFiles/glass.dir/glass.cpp.o.d
+  FLAGS = -O3 -DNDEBUG -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk
+  OBJECT_DIR = CMakeFiles/glass.dir
+  OBJECT_FILE_DIR = CMakeFiles/glass.dir
+  TARGET_COMPILE_PDB = CMakeFiles/glass.dir/
+  TARGET_PDB = glass.pdb
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target glass
+
+
+#############################################
+# Link the executable glass
+
+build glass: CXX_EXECUTABLE_LINKER__glass_Release CMakeFiles/glass.dir/glass.cpp.o
+  FLAGS = -O3 -DNDEBUG -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk
+  OBJECT_DIR = CMakeFiles/glass.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_COMPILE_PDB = CMakeFiles/glass.dir/
+  TARGET_FILE = glass
+  TARGET_PDB = glass.pdb
+
+# =============================================================================
+# Object build statements for EXECUTABLE target positionable_camera
+
+
+#############################################
+# Order-only phony target for positionable_camera
+
+build cmake_object_order_depends_target_positionable_camera: phony || CMakeFiles/positionable_camera.dir
+
+build CMakeFiles/positionable_camera.dir/positionable_camera.cpp.o: CXX_COMPILER__positionable_camera_Release /Users/loaneruser/Documents/Dartmouth/Rendering$ Algorithm/Code/Reading$ Assignments/RTOW/Rendering-Algorithm-Learning_Ray-Tracing-in-One-Weekend/positionable_camera.cpp || cmake_object_order_depends_target_positionable_camera
+  DEP_FILE = CMakeFiles/positionable_camera.dir/positionable_camera.cpp.o.d
+  FLAGS = -O3 -DNDEBUG -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk
+  OBJECT_DIR = CMakeFiles/positionable_camera.dir
+  OBJECT_FILE_DIR = CMakeFiles/positionable_camera.dir
+  TARGET_COMPILE_PDB = CMakeFiles/positionable_camera.dir/
+  TARGET_PDB = positionable_camera.pdb
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target positionable_camera
+
+
+#############################################
+# Link the executable positionable_camera
+
+build positionable_camera: CXX_EXECUTABLE_LINKER__positionable_camera_Release CMakeFiles/positionable_camera.dir/positionable_camera.cpp.o
+  FLAGS = -O3 -DNDEBUG -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk
+  OBJECT_DIR = CMakeFiles/positionable_camera.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_COMPILE_PDB = CMakeFiles/positionable_camera.dir/
+  TARGET_FILE = positionable_camera
+  TARGET_PDB = positionable_camera.pdb
+
+# =============================================================================
+# Object build statements for EXECUTABLE target final_render
+
+
+#############################################
+# Order-only phony target for final_render
+
+build cmake_object_order_depends_target_final_render: phony || CMakeFiles/final_render.dir
+
+build CMakeFiles/final_render.dir/final_render.cpp.o: CXX_COMPILER__final_render_Release /Users/loaneruser/Documents/Dartmouth/Rendering$ Algorithm/Code/Reading$ Assignments/RTOW/Rendering-Algorithm-Learning_Ray-Tracing-in-One-Weekend/final_render.cpp || cmake_object_order_depends_target_final_render
+  DEP_FILE = CMakeFiles/final_render.dir/final_render.cpp.o.d
+  FLAGS = -O3 -DNDEBUG -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk
+  OBJECT_DIR = CMakeFiles/final_render.dir
+  OBJECT_FILE_DIR = CMakeFiles/final_render.dir
+  TARGET_COMPILE_PDB = CMakeFiles/final_render.dir/
+  TARGET_PDB = final_render.pdb
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target final_render
+
+
+#############################################
+# Link the executable final_render
+
+build final_render: CXX_EXECUTABLE_LINKER__final_render_Release CMakeFiles/final_render.dir/final_render.cpp.o
+  FLAGS = -O3 -DNDEBUG -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk
+  OBJECT_DIR = CMakeFiles/final_render.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_COMPILE_PDB = CMakeFiles/final_render.dir/
+  TARGET_FILE = final_render
+  TARGET_PDB = final_render.pdb
+
+
+#############################################
+# Utility command for package
+
+build CMakeFiles/package.util: CUSTOM_COMMAND all
+  COMMAND = cd "/Users/loaneruser/Documents/Dartmouth/Rendering Algorithm/Code/Reading Assignments/RTOW/Rendering-Algorithm-Learning_Ray-Tracing-in-One-Weekend/build/Release" && /Applications/CMake.app/Contents/bin/cpack --config ./CPackConfig.cmake
+  DESC = Run CPack packaging tool...
+  pool = console
+  restat = 1
+
+build package: phony CMakeFiles/package.util
+
+
+#############################################
+# Utility command for package_source
+
+build CMakeFiles/package_source.util: CUSTOM_COMMAND
+  COMMAND = cd "/Users/loaneruser/Documents/Dartmouth/Rendering Algorithm/Code/Reading Assignments/RTOW/Rendering-Algorithm-Learning_Ray-Tracing-in-One-Weekend/build/Release" && /Applications/CMake.app/Contents/bin/cpack --config ./CPackSourceConfig.cmake /Users/loaneruser/Documents/Dartmouth/Rendering\ Algorithm/Code/Reading\ Assignments/RTOW/Rendering-Algorithm-Learning_Ray-Tracing-in-One-Weekend/build/Release/CPackSourceConfig.cmake
+  DESC = Run CPack packaging tool for source...
+  pool = console
+  restat = 1
+
+build package_source: phony CMakeFiles/package_source.util
+
+
+#############################################
+# Utility command for test
+
+build CMakeFiles/test.util: CUSTOM_COMMAND
+  COMMAND = cd "/Users/loaneruser/Documents/Dartmouth/Rendering Algorithm/Code/Reading Assignments/RTOW/Rendering-Algorithm-Learning_Ray-Tracing-in-One-Weekend/build/Release" && /Applications/CMake.app/Contents/bin/ctest --force-new-ctest-process
+  DESC = Running tests...
+  pool = console
+  restat = 1
+
+build test: phony CMakeFiles/test.util
+
+
+#############################################
+# Utility command for edit_cache
+
+build CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cd "/Users/loaneruser/Documents/Dartmouth/Rendering Algorithm/Code/Reading Assignments/RTOW/Rendering-Algorithm-Learning_Ray-Tracing-in-One-Weekend/build/Release" && /Applications/CMake.app/Contents/bin/ccmake -S"/Users/loaneruser/Documents/Dartmouth/Rendering Algorithm/Code/Reading Assignments/RTOW/Rendering-Algorithm-Learning_Ray-Tracing-in-One-Weekend" -B"/Users/loaneruser/Documents/Dartmouth/Rendering Algorithm/Code/Reading Assignments/RTOW/Rendering-Algorithm-Learning_Ray-Tracing-in-One-Weekend/build/Release"
+  DESC = Running CMake cache editor...
+  pool = console
+  restat = 1
+
+build edit_cache: phony CMakeFiles/edit_cache.util
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cd "/Users/loaneruser/Documents/Dartmouth/Rendering Algorithm/Code/Reading Assignments/RTOW/Rendering-Algorithm-Learning_Ray-Tracing-in-One-Weekend/build/Release" && /Applications/CMake.app/Contents/bin/cmake --regenerate-during-build -S"/Users/loaneruser/Documents/Dartmouth/Rendering Algorithm/Code/Reading Assignments/RTOW/Rendering-Algorithm-Learning_Ray-Tracing-in-One-Weekend" -B"/Users/loaneruser/Documents/Dartmouth/Rendering Algorithm/Code/Reading Assignments/RTOW/Rendering-Algorithm-Learning_Ray-Tracing-in-One-Weekend/build/Release"
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build rebuild_cache: phony CMakeFiles/rebuild_cache.util
+
+
+#############################################
+# Custom command for CMakeFiles/Experimental
+
+build CMakeFiles/Experimental | ${cmake_ninja_workdir}CMakeFiles/Experimental: CUSTOM_COMMAND
+  COMMAND = cd "/Users/loaneruser/Documents/Dartmouth/Rendering Algorithm/Code/Reading Assignments/RTOW/Rendering-Algorithm-Learning_Ray-Tracing-in-One-Weekend/build/Release" && /Applications/CMake.app/Contents/bin/ctest -D Experimental
+  pool = console
+
+
+#############################################
+# Custom command for CMakeFiles/Nightly
+
+build CMakeFiles/Nightly | ${cmake_ninja_workdir}CMakeFiles/Nightly: CUSTOM_COMMAND
+  COMMAND = cd "/Users/loaneruser/Documents/Dartmouth/Rendering Algorithm/Code/Reading Assignments/RTOW/Rendering-Algorithm-Learning_Ray-Tracing-in-One-Weekend/build/Release" && /Applications/CMake.app/Contents/bin/ctest -D Nightly
+  pool = console
+
+
+#############################################
+# Custom command for CMakeFiles/Continuous
+
+build CMakeFiles/Continuous | ${cmake_ninja_workdir}CMakeFiles/Continuous: CUSTOM_COMMAND
+  COMMAND = cd "/Users/loaneruser/Documents/Dartmouth/Rendering Algorithm/Code/Reading Assignments/RTOW/Rendering-Algorithm-Learning_Ray-Tracing-in-One-Weekend/build/Release" && /Applications/CMake.app/Contents/bin/ctest -D Continuous
+  pool = console
+
+
+#############################################
+# Custom command for CMakeFiles/NightlyMemoryCheck
+
+build CMakeFiles/NightlyMemoryCheck | ${cmake_ninja_workdir}CMakeFiles/NightlyMemoryCheck: CUSTOM_COMMAND
+  COMMAND = cd "/Users/loaneruser/Documents/Dartmouth/Rendering Algorithm/Code/Reading Assignments/RTOW/Rendering-Algorithm-Learning_Ray-Tracing-in-One-Weekend/build/Release" && /Applications/CMake.app/Contents/bin/ctest -D NightlyMemoryCheck
+  pool = console
+
+
+#############################################
+# Custom command for CMakeFiles/NightlyStart
+
+build CMakeFiles/NightlyStart | ${cmake_ninja_workdir}CMakeFiles/NightlyStart: CUSTOM_COMMAND
+  COMMAND = cd "/Users/loaneruser/Documents/Dartmouth/Rendering Algorithm/Code/Reading Assignments/RTOW/Rendering-Algorithm-Learning_Ray-Tracing-in-One-Weekend/build/Release" && /Applications/CMake.app/Contents/bin/ctest -D NightlyStart
+  pool = console
+
+
+#############################################
+# Custom command for CMakeFiles/NightlyUpdate
+
+build CMakeFiles/NightlyUpdate | ${cmake_ninja_workdir}CMakeFiles/NightlyUpdate: CUSTOM_COMMAND
+  COMMAND = cd "/Users/loaneruser/Documents/Dartmouth/Rendering Algorithm/Code/Reading Assignments/RTOW/Rendering-Algorithm-Learning_Ray-Tracing-in-One-Weekend/build/Release" && /Applications/CMake.app/Contents/bin/ctest -D NightlyUpdate
+  pool = console
+
+
+#############################################
+# Custom command for CMakeFiles/NightlyConfigure
+
+build CMakeFiles/NightlyConfigure | ${cmake_ninja_workdir}CMakeFiles/NightlyConfigure: CUSTOM_COMMAND
+  COMMAND = cd "/Users/loaneruser/Documents/Dartmouth/Rendering Algorithm/Code/Reading Assignments/RTOW/Rendering-Algorithm-Learning_Ray-Tracing-in-One-Weekend/build/Release" && /Applications/CMake.app/Contents/bin/ctest -D NightlyConfigure
+  pool = console
+
+
+#############################################
+# Custom command for CMakeFiles/NightlyBuild
+
+build CMakeFiles/NightlyBuild | ${cmake_ninja_workdir}CMakeFiles/NightlyBuild: CUSTOM_COMMAND
+  COMMAND = cd "/Users/loaneruser/Documents/Dartmouth/Rendering Algorithm/Code/Reading Assignments/RTOW/Rendering-Algorithm-Learning_Ray-Tracing-in-One-Weekend/build/Release" && /Applications/CMake.app/Contents/bin/ctest -D NightlyBuild
+  pool = console
+
+
+#############################################
+# Custom command for CMakeFiles/NightlyTest
+
+build CMakeFiles/NightlyTest | ${cmake_ninja_workdir}CMakeFiles/NightlyTest: CUSTOM_COMMAND
+  COMMAND = cd "/Users/loaneruser/Documents/Dartmouth/Rendering Algorithm/Code/Reading Assignments/RTOW/Rendering-Algorithm-Learning_Ray-Tracing-in-One-Weekend/build/Release" && /Applications/CMake.app/Contents/bin/ctest -D NightlyTest
+  pool = console
+
+
+#############################################
+# Custom command for CMakeFiles/NightlyCoverage
+
+build CMakeFiles/NightlyCoverage | ${cmake_ninja_workdir}CMakeFiles/NightlyCoverage: CUSTOM_COMMAND
+  COMMAND = cd "/Users/loaneruser/Documents/Dartmouth/Rendering Algorithm/Code/Reading Assignments/RTOW/Rendering-Algorithm-Learning_Ray-Tracing-in-One-Weekend/build/Release" && /Applications/CMake.app/Contents/bin/ctest -D NightlyCoverage
+  pool = console
+
+
+#############################################
+# Custom command for CMakeFiles/NightlyMemCheck
+
+build CMakeFiles/NightlyMemCheck | ${cmake_ninja_workdir}CMakeFiles/NightlyMemCheck: CUSTOM_COMMAND
+  COMMAND = cd "/Users/loaneruser/Documents/Dartmouth/Rendering Algorithm/Code/Reading Assignments/RTOW/Rendering-Algorithm-Learning_Ray-Tracing-in-One-Weekend/build/Release" && /Applications/CMake.app/Contents/bin/ctest -D NightlyMemCheck
+  pool = console
+
+
+#############################################
+# Custom command for CMakeFiles/NightlySubmit
+
+build CMakeFiles/NightlySubmit | ${cmake_ninja_workdir}CMakeFiles/NightlySubmit: CUSTOM_COMMAND
+  COMMAND = cd "/Users/loaneruser/Documents/Dartmouth/Rendering Algorithm/Code/Reading Assignments/RTOW/Rendering-Algorithm-Learning_Ray-Tracing-in-One-Weekend/build/Release" && /Applications/CMake.app/Contents/bin/ctest -D NightlySubmit
+  pool = console
+
+
+#############################################
+# Custom command for CMakeFiles/ExperimentalStart
+
+build CMakeFiles/ExperimentalStart | ${cmake_ninja_workdir}CMakeFiles/ExperimentalStart: CUSTOM_COMMAND
+  COMMAND = cd "/Users/loaneruser/Documents/Dartmouth/Rendering Algorithm/Code/Reading Assignments/RTOW/Rendering-Algorithm-Learning_Ray-Tracing-in-One-Weekend/build/Release" && /Applications/CMake.app/Contents/bin/ctest -D ExperimentalStart
+  pool = console
+
+
+#############################################
+# Custom command for CMakeFiles/ExperimentalUpdate
+
+build CMakeFiles/ExperimentalUpdate | ${cmake_ninja_workdir}CMakeFiles/ExperimentalUpdate: CUSTOM_COMMAND
+  COMMAND = cd "/Users/loaneruser/Documents/Dartmouth/Rendering Algorithm/Code/Reading Assignments/RTOW/Rendering-Algorithm-Learning_Ray-Tracing-in-One-Weekend/build/Release" && /Applications/CMake.app/Contents/bin/ctest -D ExperimentalUpdate
+  pool = console
+
+
+#############################################
+# Custom command for CMakeFiles/ExperimentalConfigure
+
+build CMakeFiles/ExperimentalConfigure | ${cmake_ninja_workdir}CMakeFiles/ExperimentalConfigure: CUSTOM_COMMAND
+  COMMAND = cd "/Users/loaneruser/Documents/Dartmouth/Rendering Algorithm/Code/Reading Assignments/RTOW/Rendering-Algorithm-Learning_Ray-Tracing-in-One-Weekend/build/Release" && /Applications/CMake.app/Contents/bin/ctest -D ExperimentalConfigure
+  pool = console
+
+
+#############################################
+# Custom command for CMakeFiles/ExperimentalBuild
+
+build CMakeFiles/ExperimentalBuild | ${cmake_ninja_workdir}CMakeFiles/ExperimentalBuild: CUSTOM_COMMAND
+  COMMAND = cd "/Users/loaneruser/Documents/Dartmouth/Rendering Algorithm/Code/Reading Assignments/RTOW/Rendering-Algorithm-Learning_Ray-Tracing-in-One-Weekend/build/Release" && /Applications/CMake.app/Contents/bin/ctest -D ExperimentalBuild
+  pool = console
+
+
+#############################################
+# Custom command for CMakeFiles/ExperimentalTest
+
+build CMakeFiles/ExperimentalTest | ${cmake_ninja_workdir}CMakeFiles/ExperimentalTest: CUSTOM_COMMAND
+  COMMAND = cd "/Users/loaneruser/Documents/Dartmouth/Rendering Algorithm/Code/Reading Assignments/RTOW/Rendering-Algorithm-Learning_Ray-Tracing-in-One-Weekend/build/Release" && /Applications/CMake.app/Contents/bin/ctest -D ExperimentalTest
+  pool = console
+
+
+#############################################
+# Custom command for CMakeFiles/ExperimentalCoverage
+
+build CMakeFiles/ExperimentalCoverage | ${cmake_ninja_workdir}CMakeFiles/ExperimentalCoverage: CUSTOM_COMMAND
+  COMMAND = cd "/Users/loaneruser/Documents/Dartmouth/Rendering Algorithm/Code/Reading Assignments/RTOW/Rendering-Algorithm-Learning_Ray-Tracing-in-One-Weekend/build/Release" && /Applications/CMake.app/Contents/bin/ctest -D ExperimentalCoverage
+  pool = console
+
+
+#############################################
+# Custom command for CMakeFiles/ExperimentalMemCheck
+
+build CMakeFiles/ExperimentalMemCheck | ${cmake_ninja_workdir}CMakeFiles/ExperimentalMemCheck: CUSTOM_COMMAND
+  COMMAND = cd "/Users/loaneruser/Documents/Dartmouth/Rendering Algorithm/Code/Reading Assignments/RTOW/Rendering-Algorithm-Learning_Ray-Tracing-in-One-Weekend/build/Release" && /Applications/CMake.app/Contents/bin/ctest -D ExperimentalMemCheck
+  pool = console
+
+
+#############################################
+# Custom command for CMakeFiles/ExperimentalSubmit
+
+build CMakeFiles/ExperimentalSubmit | ${cmake_ninja_workdir}CMakeFiles/ExperimentalSubmit: CUSTOM_COMMAND
+  COMMAND = cd "/Users/loaneruser/Documents/Dartmouth/Rendering Algorithm/Code/Reading Assignments/RTOW/Rendering-Algorithm-Learning_Ray-Tracing-in-One-Weekend/build/Release" && /Applications/CMake.app/Contents/bin/ctest -D ExperimentalSubmit
+  pool = console
+
+
+#############################################
+# Custom command for CMakeFiles/ContinuousStart
+
+build CMakeFiles/ContinuousStart | ${cmake_ninja_workdir}CMakeFiles/ContinuousStart: CUSTOM_COMMAND
+  COMMAND = cd "/Users/loaneruser/Documents/Dartmouth/Rendering Algorithm/Code/Reading Assignments/RTOW/Rendering-Algorithm-Learning_Ray-Tracing-in-One-Weekend/build/Release" && /Applications/CMake.app/Contents/bin/ctest -D ContinuousStart
+  pool = console
+
+
+#############################################
+# Custom command for CMakeFiles/ContinuousUpdate
+
+build CMakeFiles/ContinuousUpdate | ${cmake_ninja_workdir}CMakeFiles/ContinuousUpdate: CUSTOM_COMMAND
+  COMMAND = cd "/Users/loaneruser/Documents/Dartmouth/Rendering Algorithm/Code/Reading Assignments/RTOW/Rendering-Algorithm-Learning_Ray-Tracing-in-One-Weekend/build/Release" && /Applications/CMake.app/Contents/bin/ctest -D ContinuousUpdate
+  pool = console
+
+
+#############################################
+# Custom command for CMakeFiles/ContinuousConfigure
+
+build CMakeFiles/ContinuousConfigure | ${cmake_ninja_workdir}CMakeFiles/ContinuousConfigure: CUSTOM_COMMAND
+  COMMAND = cd "/Users/loaneruser/Documents/Dartmouth/Rendering Algorithm/Code/Reading Assignments/RTOW/Rendering-Algorithm-Learning_Ray-Tracing-in-One-Weekend/build/Release" && /Applications/CMake.app/Contents/bin/ctest -D ContinuousConfigure
+  pool = console
+
+
+#############################################
+# Custom command for CMakeFiles/ContinuousBuild
+
+build CMakeFiles/ContinuousBuild | ${cmake_ninja_workdir}CMakeFiles/ContinuousBuild: CUSTOM_COMMAND
+  COMMAND = cd "/Users/loaneruser/Documents/Dartmouth/Rendering Algorithm/Code/Reading Assignments/RTOW/Rendering-Algorithm-Learning_Ray-Tracing-in-One-Weekend/build/Release" && /Applications/CMake.app/Contents/bin/ctest -D ContinuousBuild
+  pool = console
+
+
+#############################################
+# Custom command for CMakeFiles/ContinuousTest
+
+build CMakeFiles/ContinuousTest | ${cmake_ninja_workdir}CMakeFiles/ContinuousTest: CUSTOM_COMMAND
+  COMMAND = cd "/Users/loaneruser/Documents/Dartmouth/Rendering Algorithm/Code/Reading Assignments/RTOW/Rendering-Algorithm-Learning_Ray-Tracing-in-One-Weekend/build/Release" && /Applications/CMake.app/Contents/bin/ctest -D ContinuousTest
+  pool = console
+
+
+#############################################
+# Custom command for CMakeFiles/ContinuousCoverage
+
+build CMakeFiles/ContinuousCoverage | ${cmake_ninja_workdir}CMakeFiles/ContinuousCoverage: CUSTOM_COMMAND
+  COMMAND = cd "/Users/loaneruser/Documents/Dartmouth/Rendering Algorithm/Code/Reading Assignments/RTOW/Rendering-Algorithm-Learning_Ray-Tracing-in-One-Weekend/build/Release" && /Applications/CMake.app/Contents/bin/ctest -D ContinuousCoverage
+  pool = console
+
+
+#############################################
+# Custom command for CMakeFiles/ContinuousMemCheck
+
+build CMakeFiles/ContinuousMemCheck | ${cmake_ninja_workdir}CMakeFiles/ContinuousMemCheck: CUSTOM_COMMAND
+  COMMAND = cd "/Users/loaneruser/Documents/Dartmouth/Rendering Algorithm/Code/Reading Assignments/RTOW/Rendering-Algorithm-Learning_Ray-Tracing-in-One-Weekend/build/Release" && /Applications/CMake.app/Contents/bin/ctest -D ContinuousMemCheck
+  pool = console
+
+
+#############################################
+# Custom command for CMakeFiles/ContinuousSubmit
+
+build CMakeFiles/ContinuousSubmit | ${cmake_ninja_workdir}CMakeFiles/ContinuousSubmit: CUSTOM_COMMAND
+  COMMAND = cd "/Users/loaneruser/Documents/Dartmouth/Rendering Algorithm/Code/Reading Assignments/RTOW/Rendering-Algorithm-Learning_Ray-Tracing-in-One-Weekend/build/Release" && /Applications/CMake.app/Contents/bin/ctest -D ContinuousSubmit
+  pool = console
+
+# =============================================================================
+# Target aliases.
+
+# =============================================================================
+# Folder targets.
+
+# =============================================================================
+
+#############################################
+# Folder: /Users/loaneruser/Documents/Dartmouth/Rendering Algorithm/Code/Reading Assignments/RTOW/Rendering-Algorithm-Learning_Ray-Tracing-in-One-Weekend/build/Release
+
+build all: phony ppm_image sending_rays_into_the_scene antialiasing Diffuse_Materials metal glass positionable_camera final_render
+
+# =============================================================================
+# Unknown Build Time Dependencies.
+# Tell Ninja that they may appear as side effects of build rules
+# otherwise ordered by order-only dependencies.
+
+# =============================================================================
+# Built-in targets
+
+
+#############################################
+# Re-run CMake if any of its inputs changed.
+
+build build.ninja: RERUN_CMAKE | /Applications/CMake.app/Contents/share/cmake-3.24/Modules/CMakeCCompiler.cmake.in /Applications/CMake.app/Contents/share/cmake-3.24/Modules/CMakeCCompilerABI.c /Applications/CMake.app/Contents/share/cmake-3.24/Modules/CMakeCInformation.cmake /Applications/CMake.app/Contents/share/cmake-3.24/Modules/CMakeCXXCompiler.cmake.in /Applications/CMake.app/Contents/share/cmake-3.24/Modules/CMakeCXXCompilerABI.cpp /Applications/CMake.app/Contents/share/cmake-3.24/Modules/CMakeCXXInformation.cmake /Applications/CMake.app/Contents/share/cmake-3.24/Modules/CMakeCommonLanguageInclude.cmake /Applications/CMake.app/Contents/share/cmake-3.24/Modules/CMakeCompilerIdDetection.cmake /Applications/CMake.app/Contents/share/cmake-3.24/Modules/CMakeDetermineCCompiler.cmake /Applications/CMake.app/Contents/share/cmake-3.24/Modules/CMakeDetermineCXXCompiler.cmake /Applications/CMake.app/Contents/share/cmake-3.24/Modules/CMakeDetermineCompileFeatures.cmake /Applications/CMake.app/Contents/share/cmake-3.24/Modules/CMakeDetermineCompiler.cmake /Applications/CMake.app/Contents/share/cmake-3.24/Modules/CMakeDetermineCompilerABI.cmake /Applications/CMake.app/Contents/share/cmake-3.24/Modules/CMakeDetermineCompilerId.cmake /Applications/CMake.app/Contents/share/cmake-3.24/Modules/CMakeDetermineSystem.cmake /Applications/CMake.app/Contents/share/cmake-3.24/Modules/CMakeFindBinUtils.cmake /Applications/CMake.app/Contents/share/cmake-3.24/Modules/CMakeGenericSystem.cmake /Applications/CMake.app/Contents/share/cmake-3.24/Modules/CMakeInitializeConfigs.cmake /Applications/CMake.app/Contents/share/cmake-3.24/Modules/CMakeLanguageInformation.cmake /Applications/CMake.app/Contents/share/cmake-3.24/Modules/CMakeNinjaFindMake.cmake /Applications/CMake.app/Contents/share/cmake-3.24/Modules/CMakeParseImplicitIncludeInfo.cmake /Applications/CMake.app/Contents/share/cmake-3.24/Modules/CMakeParseImplicitLinkInfo.cmake /Applications/CMake.app/Contents/share/cmake-3.24/Modules/CMakeParseLibraryArchitecture.cmake /Applications/CMake.app/Contents/share/cmake-3.24/Modules/CMakeSystem.cmake.in /Applications/CMake.app/Contents/share/cmake-3.24/Modules/CMakeSystemSpecificInformation.cmake /Applications/CMake.app/Contents/share/cmake-3.24/Modules/CMakeSystemSpecificInitialize.cmake /Applications/CMake.app/Contents/share/cmake-3.24/Modules/CMakeTestCCompiler.cmake /Applications/CMake.app/Contents/share/cmake-3.24/Modules/CMakeTestCXXCompiler.cmake /Applications/CMake.app/Contents/share/cmake-3.24/Modules/CMakeTestCompilerCommon.cmake /Applications/CMake.app/Contents/share/cmake-3.24/Modules/CPack.cmake /Applications/CMake.app/Contents/share/cmake-3.24/Modules/CPackComponent.cmake /Applications/CMake.app/Contents/share/cmake-3.24/Modules/CTest.cmake /Applications/CMake.app/Contents/share/cmake-3.24/Modules/CTestTargets.cmake /Applications/CMake.app/Contents/share/cmake-3.24/Modules/CTestUseLaunchers.cmake /Applications/CMake.app/Contents/share/cmake-3.24/Modules/Compiler/ADSP-DetermineCompiler.cmake /Applications/CMake.app/Contents/share/cmake-3.24/Modules/Compiler/ARMCC-DetermineCompiler.cmake /Applications/CMake.app/Contents/share/cmake-3.24/Modules/Compiler/ARMClang-DetermineCompiler.cmake /Applications/CMake.app/Contents/share/cmake-3.24/Modules/Compiler/AppleClang-C.cmake /Applications/CMake.app/Contents/share/cmake-3.24/Modules/Compiler/AppleClang-CXX.cmake /Applications/CMake.app/Contents/share/cmake-3.24/Modules/Compiler/AppleClang-DetermineCompiler.cmake /Applications/CMake.app/Contents/share/cmake-3.24/Modules/Compiler/Borland-DetermineCompiler.cmake /Applications/CMake.app/Contents/share/cmake-3.24/Modules/Compiler/Bruce-C-DetermineCompiler.cmake /Applications/CMake.app/Contents/share/cmake-3.24/Modules/Compiler/CMakeCommonCompilerMacros.cmake /Applications/CMake.app/Contents/share/cmake-3.24/Modules/Compiler/Clang-DetermineCompiler.cmake /Applications/CMake.app/Contents/share/cmake-3.24/Modules/Compiler/Clang-DetermineCompilerInternal.cmake /Applications/CMake.app/Contents/share/cmake-3.24/Modules/Compiler/Clang.cmake /Applications/CMake.app/Contents/share/cmake-3.24/Modules/Compiler/Comeau-CXX-DetermineCompiler.cmake /Applications/CMake.app/Contents/share/cmake-3.24/Modules/Compiler/Compaq-C-DetermineCompiler.cmake /Applications/CMake.app/Contents/share/cmake-3.24/Modules/Compiler/Compaq-CXX-DetermineCompiler.cmake /Applications/CMake.app/Contents/share/cmake-3.24/Modules/Compiler/Cray-DetermineCompiler.cmake /Applications/CMake.app/Contents/share/cmake-3.24/Modules/Compiler/Embarcadero-DetermineCompiler.cmake /Applications/CMake.app/Contents/share/cmake-3.24/Modules/Compiler/Fujitsu-DetermineCompiler.cmake /Applications/CMake.app/Contents/share/cmake-3.24/Modules/Compiler/FujitsuClang-DetermineCompiler.cmake /Applications/CMake.app/Contents/share/cmake-3.24/Modules/Compiler/GHS-DetermineCompiler.cmake /Applications/CMake.app/Contents/share/cmake-3.24/Modules/Compiler/GNU-C-DetermineCompiler.cmake /Applications/CMake.app/Contents/share/cmake-3.24/Modules/Compiler/GNU-CXX-DetermineCompiler.cmake /Applications/CMake.app/Contents/share/cmake-3.24/Modules/Compiler/GNU.cmake /Applications/CMake.app/Contents/share/cmake-3.24/Modules/Compiler/HP-C-DetermineCompiler.cmake /Applications/CMake.app/Contents/share/cmake-3.24/Modules/Compiler/HP-CXX-DetermineCompiler.cmake /Applications/CMake.app/Contents/share/cmake-3.24/Modules/Compiler/IAR-DetermineCompiler.cmake /Applications/CMake.app/Contents/share/cmake-3.24/Modules/Compiler/IBMCPP-C-DetermineVersionInternal.cmake /Applications/CMake.app/Contents/share/cmake-3.24/Modules/Compiler/IBMCPP-CXX-DetermineVersionInternal.cmake /Applications/CMake.app/Contents/share/cmake-3.24/Modules/Compiler/IBMClang-C-DetermineCompiler.cmake /Applications/CMake.app/Contents/share/cmake-3.24/Modules/Compiler/IBMClang-CXX-DetermineCompiler.cmake /Applications/CMake.app/Contents/share/cmake-3.24/Modules/Compiler/Intel-DetermineCompiler.cmake /Applications/CMake.app/Contents/share/cmake-3.24/Modules/Compiler/IntelLLVM-DetermineCompiler.cmake /Applications/CMake.app/Contents/share/cmake-3.24/Modules/Compiler/LCC-C-DetermineCompiler.cmake /Applications/CMake.app/Contents/share/cmake-3.24/Modules/Compiler/LCC-CXX-DetermineCompiler.cmake /Applications/CMake.app/Contents/share/cmake-3.24/Modules/Compiler/MSVC-DetermineCompiler.cmake /Applications/CMake.app/Contents/share/cmake-3.24/Modules/Compiler/NVHPC-DetermineCompiler.cmake /Applications/CMake.app/Contents/share/cmake-3.24/Modules/Compiler/NVIDIA-DetermineCompiler.cmake /Applications/CMake.app/Contents/share/cmake-3.24/Modules/Compiler/OpenWatcom-DetermineCompiler.cmake /Applications/CMake.app/Contents/share/cmake-3.24/Modules/Compiler/PGI-DetermineCompiler.cmake /Applications/CMake.app/Contents/share/cmake-3.24/Modules/Compiler/PathScale-DetermineCompiler.cmake /Applications/CMake.app/Contents/share/cmake-3.24/Modules/Compiler/SCO-DetermineCompiler.cmake /Applications/CMake.app/Contents/share/cmake-3.24/Modules/Compiler/SDCC-C-DetermineCompiler.cmake /Applications/CMake.app/Contents/share/cmake-3.24/Modules/Compiler/SunPro-C-DetermineCompiler.cmake /Applications/CMake.app/Contents/share/cmake-3.24/Modules/Compiler/SunPro-CXX-DetermineCompiler.cmake /Applications/CMake.app/Contents/share/cmake-3.24/Modules/Compiler/TI-DetermineCompiler.cmake /Applications/CMake.app/Contents/share/cmake-3.24/Modules/Compiler/TinyCC-C-DetermineCompiler.cmake /Applications/CMake.app/Contents/share/cmake-3.24/Modules/Compiler/VisualAge-C-DetermineCompiler.cmake /Applications/CMake.app/Contents/share/cmake-3.24/Modules/Compiler/VisualAge-CXX-DetermineCompiler.cmake /Applications/CMake.app/Contents/share/cmake-3.24/Modules/Compiler/Watcom-DetermineCompiler.cmake /Applications/CMake.app/Contents/share/cmake-3.24/Modules/Compiler/XL-C-DetermineCompiler.cmake /Applications/CMake.app/Contents/share/cmake-3.24/Modules/Compiler/XL-CXX-DetermineCompiler.cmake /Applications/CMake.app/Contents/share/cmake-3.24/Modules/Compiler/XLClang-C-DetermineCompiler.cmake /Applications/CMake.app/Contents/share/cmake-3.24/Modules/Compiler/XLClang-CXX-DetermineCompiler.cmake /Applications/CMake.app/Contents/share/cmake-3.24/Modules/Compiler/zOS-C-DetermineCompiler.cmake /Applications/CMake.app/Contents/share/cmake-3.24/Modules/Compiler/zOS-CXX-DetermineCompiler.cmake /Applications/CMake.app/Contents/share/cmake-3.24/Modules/DartConfiguration.tcl.in /Applications/CMake.app/Contents/share/cmake-3.24/Modules/Internal/FeatureTesting.cmake /Applications/CMake.app/Contents/share/cmake-3.24/Modules/Platform/Apple-AppleClang-C.cmake /Applications/CMake.app/Contents/share/cmake-3.24/Modules/Platform/Apple-AppleClang-CXX.cmake /Applications/CMake.app/Contents/share/cmake-3.24/Modules/Platform/Apple-Clang-C.cmake /Applications/CMake.app/Contents/share/cmake-3.24/Modules/Platform/Apple-Clang-CXX.cmake /Applications/CMake.app/Contents/share/cmake-3.24/Modules/Platform/Apple-Clang.cmake /Applications/CMake.app/Contents/share/cmake-3.24/Modules/Platform/Darwin-Determine-CXX.cmake /Applications/CMake.app/Contents/share/cmake-3.24/Modules/Platform/Darwin-Initialize.cmake /Applications/CMake.app/Contents/share/cmake-3.24/Modules/Platform/Darwin.cmake /Applications/CMake.app/Contents/share/cmake-3.24/Modules/Platform/UnixPaths.cmake /Applications/CMake.app/Contents/share/cmake-3.24/Templates/CPackConfig.cmake.in /Users/loaneruser/Documents/Dartmouth/Rendering$ Algorithm/Code/Reading$ Assignments/RTOW/Rendering-Algorithm-Learning_Ray-Tracing-in-One-Weekend/CMakeLists.txt CMakeCache.txt CMakeFiles/3.24.1/CMakeCCompiler.cmake CMakeFiles/3.24.1/CMakeCXXCompiler.cmake CMakeFiles/3.24.1/CMakeSystem.cmake
+  pool = console
+
+
+#############################################
+# A missing CMake input file is not an error.
+
+build /Applications/CMake.app/Contents/share/cmake-3.24/Modules/CMakeCCompiler.cmake.in /Applications/CMake.app/Contents/share/cmake-3.24/Modules/CMakeCCompilerABI.c /Applications/CMake.app/Contents/share/cmake-3.24/Modules/CMakeCInformation.cmake /Applications/CMake.app/Contents/share/cmake-3.24/Modules/CMakeCXXCompiler.cmake.in /Applications/CMake.app/Contents/share/cmake-3.24/Modules/CMakeCXXCompilerABI.cpp /Applications/CMake.app/Contents/share/cmake-3.24/Modules/CMakeCXXInformation.cmake /Applications/CMake.app/Contents/share/cmake-3.24/Modules/CMakeCommonLanguageInclude.cmake /Applications/CMake.app/Contents/share/cmake-3.24/Modules/CMakeCompilerIdDetection.cmake /Applications/CMake.app/Contents/share/cmake-3.24/Modules/CMakeDetermineCCompiler.cmake /Applications/CMake.app/Contents/share/cmake-3.24/Modules/CMakeDetermineCXXCompiler.cmake /Applications/CMake.app/Contents/share/cmake-3.24/Modules/CMakeDetermineCompileFeatures.cmake /Applications/CMake.app/Contents/share/cmake-3.24/Modules/CMakeDetermineCompiler.cmake /Applications/CMake.app/Contents/share/cmake-3.24/Modules/CMakeDetermineCompilerABI.cmake /Applications/CMake.app/Contents/share/cmake-3.24/Modules/CMakeDetermineCompilerId.cmake /Applications/CMake.app/Contents/share/cmake-3.24/Modules/CMakeDetermineSystem.cmake /Applications/CMake.app/Contents/share/cmake-3.24/Modules/CMakeFindBinUtils.cmake /Applications/CMake.app/Contents/share/cmake-3.24/Modules/CMakeGenericSystem.cmake /Applications/CMake.app/Contents/share/cmake-3.24/Modules/CMakeInitializeConfigs.cmake /Applications/CMake.app/Contents/share/cmake-3.24/Modules/CMakeLanguageInformation.cmake /Applications/CMake.app/Contents/share/cmake-3.24/Modules/CMakeNinjaFindMake.cmake /Applications/CMake.app/Contents/share/cmake-3.24/Modules/CMakeParseImplicitIncludeInfo.cmake /Applications/CMake.app/Contents/share/cmake-3.24/Modules/CMakeParseImplicitLinkInfo.cmake /Applications/CMake.app/Contents/share/cmake-3.24/Modules/CMakeParseLibraryArchitecture.cmake /Applications/CMake.app/Contents/share/cmake-3.24/Modules/CMakeSystem.cmake.in /Applications/CMake.app/Contents/share/cmake-3.24/Modules/CMakeSystemSpecificInformation.cmake /Applications/CMake.app/Contents/share/cmake-3.24/Modules/CMakeSystemSpecificInitialize.cmake /Applications/CMake.app/Contents/share/cmake-3.24/Modules/CMakeTestCCompiler.cmake /Applications/CMake.app/Contents/share/cmake-3.24/Modules/CMakeTestCXXCompiler.cmake /Applications/CMake.app/Contents/share/cmake-3.24/Modules/CMakeTestCompilerCommon.cmake /Applications/CMake.app/Contents/share/cmake-3.24/Modules/CPack.cmake /Applications/CMake.app/Contents/share/cmake-3.24/Modules/CPackComponent.cmake /Applications/CMake.app/Contents/share/cmake-3.24/Modules/CTest.cmake /Applications/CMake.app/Contents/share/cmake-3.24/Modules/CTestTargets.cmake /Applications/CMake.app/Contents/share/cmake-3.24/Modules/CTestUseLaunchers.cmake /Applications/CMake.app/Contents/share/cmake-3.24/Modules/Compiler/ADSP-DetermineCompiler.cmake /Applications/CMake.app/Contents/share/cmake-3.24/Modules/Compiler/ARMCC-DetermineCompiler.cmake /Applications/CMake.app/Contents/share/cmake-3.24/Modules/Compiler/ARMClang-DetermineCompiler.cmake /Applications/CMake.app/Contents/share/cmake-3.24/Modules/Compiler/AppleClang-C.cmake /Applications/CMake.app/Contents/share/cmake-3.24/Modules/Compiler/AppleClang-CXX.cmake /Applications/CMake.app/Contents/share/cmake-3.24/Modules/Compiler/AppleClang-DetermineCompiler.cmake /Applications/CMake.app/Contents/share/cmake-3.24/Modules/Compiler/Borland-DetermineCompiler.cmake /Applications/CMake.app/Contents/share/cmake-3.24/Modules/Compiler/Bruce-C-DetermineCompiler.cmake /Applications/CMake.app/Contents/share/cmake-3.24/Modules/Compiler/CMakeCommonCompilerMacros.cmake /Applications/CMake.app/Contents/share/cmake-3.24/Modules/Compiler/Clang-DetermineCompiler.cmake /Applications/CMake.app/Contents/share/cmake-3.24/Modules/Compiler/Clang-DetermineCompilerInternal.cmake /Applications/CMake.app/Contents/share/cmake-3.24/Modules/Compiler/Clang.cmake /Applications/CMake.app/Contents/share/cmake-3.24/Modules/Compiler/Comeau-CXX-DetermineCompiler.cmake /Applications/CMake.app/Contents/share/cmake-3.24/Modules/Compiler/Compaq-C-DetermineCompiler.cmake /Applications/CMake.app/Contents/share/cmake-3.24/Modules/Compiler/Compaq-CXX-DetermineCompiler.cmake /Applications/CMake.app/Contents/share/cmake-3.24/Modules/Compiler/Cray-DetermineCompiler.cmake /Applications/CMake.app/Contents/share/cmake-3.24/Modules/Compiler/Embarcadero-DetermineCompiler.cmake /Applications/CMake.app/Contents/share/cmake-3.24/Modules/Compiler/Fujitsu-DetermineCompiler.cmake /Applications/CMake.app/Contents/share/cmake-3.24/Modules/Compiler/FujitsuClang-DetermineCompiler.cmake /Applications/CMake.app/Contents/share/cmake-3.24/Modules/Compiler/GHS-DetermineCompiler.cmake /Applications/CMake.app/Contents/share/cmake-3.24/Modules/Compiler/GNU-C-DetermineCompiler.cmake /Applications/CMake.app/Contents/share/cmake-3.24/Modules/Compiler/GNU-CXX-DetermineCompiler.cmake /Applications/CMake.app/Contents/share/cmake-3.24/Modules/Compiler/GNU.cmake /Applications/CMake.app/Contents/share/cmake-3.24/Modules/Compiler/HP-C-DetermineCompiler.cmake /Applications/CMake.app/Contents/share/cmake-3.24/Modules/Compiler/HP-CXX-DetermineCompiler.cmake /Applications/CMake.app/Contents/share/cmake-3.24/Modules/Compiler/IAR-DetermineCompiler.cmake /Applications/CMake.app/Contents/share/cmake-3.24/Modules/Compiler/IBMCPP-C-DetermineVersionInternal.cmake /Applications/CMake.app/Contents/share/cmake-3.24/Modules/Compiler/IBMCPP-CXX-DetermineVersionInternal.cmake /Applications/CMake.app/Contents/share/cmake-3.24/Modules/Compiler/IBMClang-C-DetermineCompiler.cmake /Applications/CMake.app/Contents/share/cmake-3.24/Modules/Compiler/IBMClang-CXX-DetermineCompiler.cmake /Applications/CMake.app/Contents/share/cmake-3.24/Modules/Compiler/Intel-DetermineCompiler.cmake /Applications/CMake.app/Contents/share/cmake-3.24/Modules/Compiler/IntelLLVM-DetermineCompiler.cmake /Applications/CMake.app/Contents/share/cmake-3.24/Modules/Compiler/LCC-C-DetermineCompiler.cmake /Applications/CMake.app/Contents/share/cmake-3.24/Modules/Compiler/LCC-CXX-DetermineCompiler.cmake /Applications/CMake.app/Contents/share/cmake-3.24/Modules/Compiler/MSVC-DetermineCompiler.cmake /Applications/CMake.app/Contents/share/cmake-3.24/Modules/Compiler/NVHPC-DetermineCompiler.cmake /Applications/CMake.app/Contents/share/cmake-3.24/Modules/Compiler/NVIDIA-DetermineCompiler.cmake /Applications/CMake.app/Contents/share/cmake-3.24/Modules/Compiler/OpenWatcom-DetermineCompiler.cmake /Applications/CMake.app/Contents/share/cmake-3.24/Modules/Compiler/PGI-DetermineCompiler.cmake /Applications/CMake.app/Contents/share/cmake-3.24/Modules/Compiler/PathScale-DetermineCompiler.cmake /Applications/CMake.app/Contents/share/cmake-3.24/Modules/Compiler/SCO-DetermineCompiler.cmake /Applications/CMake.app/Contents/share/cmake-3.24/Modules/Compiler/SDCC-C-DetermineCompiler.cmake /Applications/CMake.app/Contents/share/cmake-3.24/Modules/Compiler/SunPro-C-DetermineCompiler.cmake /Applications/CMake.app/Contents/share/cmake-3.24/Modules/Compiler/SunPro-CXX-DetermineCompiler.cmake /Applications/CMake.app/Contents/share/cmake-3.24/Modules/Compiler/TI-DetermineCompiler.cmake /Applications/CMake.app/Contents/share/cmake-3.24/Modules/Compiler/TinyCC-C-DetermineCompiler.cmake /Applications/CMake.app/Contents/share/cmake-3.24/Modules/Compiler/VisualAge-C-DetermineCompiler.cmake /Applications/CMake.app/Contents/share/cmake-3.24/Modules/Compiler/VisualAge-CXX-DetermineCompiler.cmake /Applications/CMake.app/Contents/share/cmake-3.24/Modules/Compiler/Watcom-DetermineCompiler.cmake /Applications/CMake.app/Contents/share/cmake-3.24/Modules/Compiler/XL-C-DetermineCompiler.cmake /Applications/CMake.app/Contents/share/cmake-3.24/Modules/Compiler/XL-CXX-DetermineCompiler.cmake /Applications/CMake.app/Contents/share/cmake-3.24/Modules/Compiler/XLClang-C-DetermineCompiler.cmake /Applications/CMake.app/Contents/share/cmake-3.24/Modules/Compiler/XLClang-CXX-DetermineCompiler.cmake /Applications/CMake.app/Contents/share/cmake-3.24/Modules/Compiler/zOS-C-DetermineCompiler.cmake /Applications/CMake.app/Contents/share/cmake-3.24/Modules/Compiler/zOS-CXX-DetermineCompiler.cmake /Applications/CMake.app/Contents/share/cmake-3.24/Modules/DartConfiguration.tcl.in /Applications/CMake.app/Contents/share/cmake-3.24/Modules/Internal/FeatureTesting.cmake /Applications/CMake.app/Contents/share/cmake-3.24/Modules/Platform/Apple-AppleClang-C.cmake /Applications/CMake.app/Contents/share/cmake-3.24/Modules/Platform/Apple-AppleClang-CXX.cmake /Applications/CMake.app/Contents/share/cmake-3.24/Modules/Platform/Apple-Clang-C.cmake /Applications/CMake.app/Contents/share/cmake-3.24/Modules/Platform/Apple-Clang-CXX.cmake /Applications/CMake.app/Contents/share/cmake-3.24/Modules/Platform/Apple-Clang.cmake /Applications/CMake.app/Contents/share/cmake-3.24/Modules/Platform/Darwin-Determine-CXX.cmake /Applications/CMake.app/Contents/share/cmake-3.24/Modules/Platform/Darwin-Initialize.cmake /Applications/CMake.app/Contents/share/cmake-3.24/Modules/Platform/Darwin.cmake /Applications/CMake.app/Contents/share/cmake-3.24/Modules/Platform/UnixPaths.cmake /Applications/CMake.app/Contents/share/cmake-3.24/Templates/CPackConfig.cmake.in /Users/loaneruser/Documents/Dartmouth/Rendering$ Algorithm/Code/Reading$ Assignments/RTOW/Rendering-Algorithm-Learning_Ray-Tracing-in-One-Weekend/CMakeLists.txt CMakeCache.txt CMakeFiles/3.24.1/CMakeCCompiler.cmake CMakeFiles/3.24.1/CMakeCXXCompiler.cmake CMakeFiles/3.24.1/CMakeSystem.cmake: phony
+
+
+#############################################
+# Clean all the built files.
+
+build clean: CLEAN
+
+
+#############################################
+# Print all primary targets available.
+
+build help: HELP
+
+
+#############################################
+# Make the all target the default.
+
+default all
